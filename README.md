@@ -7,6 +7,8 @@ Terraform is an open-source infrastructure used as a code software tool which is
 
 Terraform allows users to define their entire infrastructure by using configuration files and version control.
 
+# How to clone github repository and push to github. 
+
 # End to end workflow/steps to deploy and delete for cloud (Azure, AWS or GCP).
 
 a. Terraform Init: 

@@ -18,13 +18,13 @@ provider "azurerm" {
 
 # create a resource group
 resource "azurerm_resource_group" "myrg" {
-  name     = "firstterraform-rg"
+  name     = "taseen-rg"
   location = "West Europe"
 }
 #create vnet within the resource group
 
 resource "azurerm_virtual_network" "myvnet" {
-  name                = "firstterraform-vnet"
+  name                = "taseen-vnet"
   location            = azurerm_resource_group.myrg.location
   resource_group_name = azurerm_resource_group.myrg.name
   address_space       = ["10.0.0.0/16"]
@@ -35,7 +35,7 @@ resource "azurerm_virtual_network" "myvnet" {
 # create subnet within the vnet
 
 resource "azurerm_subnet" "mysubnet" {
-  name                 = "firstterraform-subnet"
+  name                 = "taseen-subnet"
   resource_group_name  = azurerm_resource_group.myrg.name
   virtual_network_name = azurerm_virtual_network.myvnet.name
   address_prefixes     = ["10.0.1.0/24"]

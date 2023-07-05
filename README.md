@@ -21,3 +21,4 @@ d. Terraform Apply:
 
 e. Terraform Destroy:
 
+# Create particular resource again/edit

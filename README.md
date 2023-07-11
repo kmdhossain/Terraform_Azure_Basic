@@ -21,4 +21,6 @@ d. Terraform Apply:
 
 e. Terraform Destroy:
 
-# Create particular resource again/edit
+# Create particular resource re-create
+
+By using taint command.
